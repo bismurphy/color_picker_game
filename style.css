@@ -1,5 +1,11 @@
+*
+{
+text-align: center;
+margin: auto !important;
+}
+
 body {
-	background: #bfbfbf;
+	background: #eeebe1;
 }
 
 .output {
@@ -9,28 +15,28 @@ body {
 }
 
 .inputsliders {
-	width:1000px;
+	text-align: left;
+	width:30%;
+	left:35%;
 }
 
 .slider {
-	position:absolute;
-	width: 20%;
-	left: 10%;
+	position:fixed;
   background: #0000FF;
+	left:40%;
+	width:20%;
 }
 #redout {
-	position:absolute;
-	left: 35%;
+	position:fixed;
+	left:63%;
 }
 #blueout {
-	position:absolute;
-	left: 35%;
-
+	position:fixed;
+	left:63%;
 }
 #greenout {
-	position:absolute;
-	left: 35%;
-
+	position:fixed;
+	left:63%;
 }
 .answerbox {
 	width: 30%;
