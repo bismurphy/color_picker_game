@@ -72,6 +72,8 @@ submit_btn.addEventListener("click",submitGuess);
 function submitGuess(){
 	var guess_LAB = XYZtoLAB(...RGBtoXYZ(r,g,b));
 	var target_LAB = XYZtoLAB(...RGBtoXYZ(targetRed,targetGreen,targetBlue));
+	console.log(guess_LAB);
+	console.log(target_LAB);
 	var dist = eucDistance(guess_LAB,target_LAB);
 	var score = Math.max(Math.round(50 * (100-dist)),0) //Max score of 5000, cap a min at 0
 	var resultBox = document.getElementById('Results');
