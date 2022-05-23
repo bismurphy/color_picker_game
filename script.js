@@ -75,7 +75,9 @@ function submitGuess(){
 	console.log(guess_LAB);
 	console.log(target_LAB);
 	var dist = eucDistance(guess_LAB,target_LAB);
-	var score = Math.max(Math.round(50 * (100-dist)),0) //Max score of 5000, cap a min at 0
+	console.log(dist);
+	var lenience = 150; //Lower will give lower scores for worse guesses
+	var score = Math.round(5000* (1-1/(1+Math.exp(-dist/lenience)))); //Max score of 5000, asymptotes to 0
 	var resultBox = document.getElementById('Results');
 	resultBox.innerText = "Real Color: " + targetRed + ", " + targetGreen + ", " + targetBlue + "\nScore: " + score;
 	answer_output.style.backgroundColor =`rgb(${targetRed}, ${targetGreen}, ${targetBlue})`;
