@@ -56,3 +56,8 @@ body {
 #blue {
 	fill: blue;
 }
+.button {
+	display: inline-block;
+	width: 30%;
+	height: 50px;
+}

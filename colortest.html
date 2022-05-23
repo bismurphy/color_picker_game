@@ -7,17 +7,17 @@
 
 <body>
   <h1>Color Guessing Game Thing!</h1><br>
-  Color to guess: <span id = "NameToGuess"></span>
+  <h2>Color to guess: <strong><span id = "NameToGuess"></span></strong></h2>
   <div class="output"></div>
   <div class="inputsliders">
       Red: <input type="range" min="0" max="255" value="128" class="slider" id="red"> <span id = "redout">128</span> <br>
       Green: <input type="range" min="0" max="255" value="128" class="slider" id="green"> <span id = "greenout">128</span> <br>
       Blue: <input type="range" min="0" max="255" value="128" class="slider" id="blue"> <span id = "blueout">128</span> <br>
   </div>
-  <button type="button" id="submitbutton">Submit!</button><br>
-  <span id = "Results"></span>
+  <button class="button" type="button" id="submitbutton">Submit!</button><br>
+  <h3><span id = "Results"></span></h3>
   <div class="answerbox"></div>
-  <button id='playagain' style="visibility:hidden;" onClick="window.location.reload();">Play Again!</button>
+  <button class="button" id='playagain' style="visibility:hidden;" onClick="window.location.reload();">Play Again!</button>
   <script src="script.js"></script>
 </body>
 
