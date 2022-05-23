@@ -6,15 +6,18 @@
 </head>
 
 <body>
-    Hello!
-    <div class="neumorphism-3"></div>
-    <div class="inpt">
-        <input type="range" min="1" max="255" value="128" class="slider" id="red">
-        <input type="range" min="1" max="255" value="128" class="slider" id="green">
-        <input type="range" min="1" max="255" value="128" class="slider" id="blue">
-    </div>
-    <h1 class="rainbow-text">--RGB-TO-COLOR--</h1>
-    <script src="script.js"></script>
+  Color Guessing Game Thing!<br>
+  Color to guess: <span id = "NameToGuess"></span>
+  <div class="output"></div>
+  <div class="input-sliders">
+      Red: <input type="range" min="1" max="255" value="128" class="slider" id="red"> <span id = "redout">128</span> <br>
+      Green: <input type="range" min="1" max="255" value="128" class="slider" id="green"> <span id = "greenout">128</span> <br>
+      Blue: <input type="range" min="1" max="255" value="128" class="slider" id="blue"> <span id = "blueout">128</span> <br>
+  </div>
+  <button type="button" id="submitbutton">Submit! </button>
+  <span id = "Results"></span>
+  <div class="answer_box"></div>
+  <script src="script.js"></script>
 </body>
 
 </html>
