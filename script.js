@@ -76,7 +76,7 @@ function submitGuess(){
 	console.log(target_LAB);
 	var dist = eucDistance(guess_LAB,target_LAB);
 	console.log(dist);
-	var lenience = 45; //Lower will give lower scores for worse guesses
+	var lenience = 45; //Lower will give lower scores for worse guesses (pickier)
 	var score = Math.round(10000* (1-1/(1+Math.exp(-dist/lenience)))); //Max score of 5000, asymptotes to 0
 	var resultBox = document.getElementById('Results');
 	resultBox.innerText = "Real Color: " + targetRed + ", " + targetGreen + ", " + targetBlue + "\nScore: " + score;

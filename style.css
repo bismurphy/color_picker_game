@@ -21,21 +21,21 @@ body {
 }
 
 .slider {
-	position:fixed;
+	position:absolute;
   background: #0000FF;
 	left:40%;
 	width:20%;
 }
 #redout {
-	position:fixed;
+	position:absolute;
 	left:63%;
 }
 #blueout {
-	position:fixed;
+	position:absolute;
 	left:63%;
 }
 #greenout {
-	position:fixed;
+	position:absolute;
 	left:63%;
 }
 .answerbox {
@@ -57,7 +57,7 @@ body {
 	fill: blue;
 }
 .button {
-	display: inline-block;
+	display: block;
 	width: 30%;
 	height: 50px;
 }
